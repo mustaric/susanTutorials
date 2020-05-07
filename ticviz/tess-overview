@@ -1,0 +1,9 @@
+#!/bin/bash
+
+fileloc='$HOME/Python_Code/susanTutorials/ticviz/'
+
+sed "s/#STAR/$1/" tic_overview.ipynb > output.ipynb
+
+echo $1
+echo $fileloc
+jupyter notebook  output.ipynb
